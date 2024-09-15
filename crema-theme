@@ -15,7 +15,8 @@
 @import url('https://refact0r.github.io/midnight-discord/midnight.css');
 
 /* customize things here */
-:root {
+/* Higher specificity using :root and * selector */
+:root * {
     /* font, change to 'gg sans' for default discord font */
     --font: 'figtree';
 
@@ -82,3 +83,4 @@
     --green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43);
     --blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2);
 }
+
