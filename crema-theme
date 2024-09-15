@@ -28,14 +28,14 @@
     --idle-indicator: #f0b232; /* change to #f0b232 for default yellow */
     --streaming-indicator: #593695; /* change to #593695 for default purple */
 
-    /* accent colors */
-    --accent-1: hsl(30, 20%, 60%); /* links */
-    --accent-2: hsl(30, 20%, 40%); /* general unread/mention elements */
-    --accent-3: hsl(30, 20%, 80%); /* accent buttons */
-    --accent-4: hsl(30, 20%, 25%); /* accent buttons when hovered */
-    --accent-5: hsl(30, 20%, 20%); /* accent buttons when clicked */
-    --mention: hsla(30, 30%, 40%, 0.1); /* mentions & mention messages */
-    --mention-hover: hsla(30, 30%, 40%, 0.05); /* mentions & mention messages when hovered */
+   /* accent colors for light mode */
+--accent-1: hsl(30, 20%, 50%); /* links - slightly darker to stand out on light background */
+--accent-2: hsl(30, 20%, 60%); /* general unread/mention elements - mocha/crema variation */
+--accent-3: hsl(30, 20%, 85%); /* accent buttons - soft but visible on light mode */
+--accent-4: hsl(30, 20%, 75%); /* accent buttons when hovered - mocha toned down */
+--accent-5: hsl(30, 20%, 70%); /* accent buttons when clicked - slightly darker variation of crema */
+--mention: hsla(30, 30%, 40%, 0.15); /* mentions & mention messages - maintain crema tones */
+--mention-hover: hsla(30, 30%, 40%, 0.1); /* mentions & mention messages when hovered */
 
     /* text colors */
     --text-0: hsl(30, 20%, 35%); /* text on colored elements */
