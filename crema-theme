@@ -77,9 +77,9 @@
     --moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* custom icon url */
     --moon-icon-size: auto;
 
-    /* filter uncolorable elements to fit theme */
-    --login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(1); /* adjust for better creamy white compatibility */
-    --green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43);
-    --blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2);
+/* filter uncolorable elements to fit light mode theme */
+--login-bg-filter: saturate(0.2) hue-rotate(-10deg) brightness(1.1); /* adjust for better compatibility with light mode */
+--green-to-accent-3-filter: hue-rotate(40deg) saturate(1.1); /* soften green elements for light mode */
+--blurple-to-accent-3-filter: hue-rotate(300deg) saturate(0.7) brightness(1.15); /* soften blurple (Discord's purple) elements */
 }
 
