@@ -1,6 +1,6 @@
 /**
  * @name crema
- * @description A creamy, warm Discord theme.
+ * @description A creamy, warm discord theme.
  * @author refact0r
  * @version 1.6.2
  * @invite nz87hXyvcy
@@ -8,114 +8,79 @@
  * @source https://github.com/refact0r/midnight-discord/blob/master/midnight.theme.css
  * @authorId 508863359777505290
  * @authorLink https://www.refact0r.dev
- */
+*/
 
-/* IMPORTANT: make sure to enable light mode in Discord settings for this theme! */
+/* IMPORTANT: make sure to enable dark mode in discord settings for the theme to apply properly!!! */
 
 @import url('https://refact0r.github.io/midnight-discord/midnight.css');
 
 /* customize things here */
 :root {
-    /* font */
-    --font: 'Figtree';
+    /* font, change to 'gg sans' for default discord font */
+    --font: 'figtree';
 
     /* top left corner text */
     --corner-text: 'Crema';
 
-    /* status indicators */
-    --online-indicator: hsl(120, 40%, 45%);
-    --dnd-indicator: hsl(0, 60%, 50%);
-    --idle-indicator: hsl(45, 85%, 55%);
-    --streaming-indicator: hsl(250, 45%, 45%);
+    /* color of status indicators and window controls */
+    --online-indicator: #23a55a; /* change to #23a55a for default green */
+    --dnd-indicator: #f13f43; /* change to #f13f43 for default red */
+    --idle-indicator: #f0b232; /* change to #f0b232 for default yellow */
+    --streaming-indicator: #593695; /* change to #593695 for default purple */
 
     /* accent colors */
-    --accent-1: #f1d29a; /* cream for links */
-    --accent-2: hsl(30, 20%, 40%); /* mocha for unread/mention elements */
-    --accent-3: hsl(30, 20%, 60%); /* accent buttons */
-    --accent-4: hsl(30, 20%, 55%); /* accent buttons when hovered */
-    --accent-5: hsl(30, 20%, 50%); /* accent buttons when clicked */
-    --mention: rgba(241, 210, 154, 0.2); /* mentions */
-    --mention-hover: rgba(241, 210, 154, 0.1); /* mention hover */
+    --accent-1: hsl(30, 20%, 60%); /* links */
+    --accent-2: hsl(30, 20%, 40%); /* general unread/mention elements */
+    --accent-3: hsl(30, 20%, 80%); /* accent buttons */
+    --accent-4: hsl(30, 20%, 25%); /* accent buttons when hovered */
+    --accent-5: hsl(30, 20%, 20%); /* accent buttons when clicked */
+    --mention: hsla(30, 30%, 40%, 0.1); /* mentions & mention messages */
+    --mention-hover: hsla(30, 30%, 40%, 0.05); /* mentions & mention messages when hovered */
 
     /* text colors */
-    --text-0: hsl(30, 20%, 25%); /* text on colored elements */
-    --text-1: hsl(30, 20%, 25%); /* mocha for important text */
-    --text-2: hsl(30, 20%, 35%); /* normal text */
-    --text-3: hsl(30, 20%, 30%); /* less important text */
-    --text-4: hsl(30, 20%, 50%); /* muted channels/timestamps */
+    --text-0: hsl(30, 20%, 35%); /* text on colored elements */
+    --text-1: hsl(30, 20%, 35%); /* updated to mocha color */
+    --text-2: hsl(30, 20%, 40%); /* headings and important text */
+    --text-3: hsl(30, 20%, 35%); /* normal text */
+    --text-4: hsl(30, 20%, 35%); /* icon buttons and channels */
+    --text-5: hsl(30, 20%, 25%); /* muted channels/chats and timestamps */
 
-    /* background colors */
-    --bg-1: hsl(30, 20%, 90%); /* creamy white for clicked buttons */
-    --bg-2: hsl(30, 20%, 95%); /* creamy white for background */
-    --bg-3: hsl(30, 20%, 98%); /* light cream background for panels */
-    --bg-4: hsl(30, 20%, 100%); /* main light background */
-    --hover: rgba(241, 210, 154, 0.2); /* creamy hover effect */
-    --active: rgba(241, 210, 154, 0.3); /* active/selected */
-    --message-hover: rgba(241, 210, 154, 0.15); /* message hover */
+    /* background and creamy colors */
+    --bg-1: hsl(30, 20%, 80%); /* creamy white buttons when clicked */
+    --bg-2: hsl(30, 20%, 85%); /* creamy white buttons */
+    --bg-3: hsl(30, 20%, 90%); /* spacing, secondary elements */
+    --bg-4: hsl(30, 20%, 95%); /* main creamy white background color */
+    --hover: rgba(241, 210, 154, 0.2); /* channels and buttons when hovered */
+    --active: rgba(241, 210, 154, 0.3); /* channels and buttons when clicked or selected */
+    --message-hover: rgba(241, 210, 154, 0.15); /* messages when hovered */
 
-    /* spacing and padding */
+    /* amount of spacing and padding */
     --spacing: 12px;
 
     /* animations */
-    --list-item-transition: 0.2s ease;
-    --unread-bar-transition: 0.2s ease;
-    --moon-spin-transition: 0.4s ease;
-    --icon-spin-transition: 1s ease;
+    --list-item-transition: 0.2s ease; /* channels/members/settings hover transition */
+    --unread-bar-transition: 0.2s ease; /* unread bar moving into view transition */
+    --moon-spin-transition: 0.4s ease; /* moon icon spin */
+    --icon-spin-transition: 1s ease; /* round icon button spin (settings, emoji, etc.) */
 
-    /* roundness (border-radius) */
-    --roundness-xl: 22px;
-    --roundness-l: 20px;
-    --roundness-m: 16px;
-    --roundness-s: 12px;
-    --roundness-xs: 10px;
-    --roundness-xxs: 8px;
+    /* corner roundness (border-radius) */
+    --roundness-xl: 22px; /* roundness of big panel outer corners */
+    --roundness-l: 20px; /* popout panels */
+    --roundness-m: 16px; /* smaller panels, images, embeds */
+    --roundness-s: 12px; /* members, settings inputs */
+    --roundness-xs: 10px; /* channels, buttons */
+    --roundness-xxs: 8px; /* searchbar, small elements */
 
-    /* moon icon */
-    --discord-icon: none;
-    --moon-icon: block;
-    --moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
+    /* direct messages moon icon */
+    --discord-icon: none; /* discord icon */
+    --moon-icon: block; /* moon icon */
+    --moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg'); /* custom icon url */
     --moon-icon-size: auto;
 
-    /* filter uncolorable elements */
-    --login-bg-filter: saturate(0.4) hue-rotate(-10deg) brightness(1.1);
-    --green-to-accent-3-filter: hue-rotate(50deg) saturate(1.2);
-    --blurple-to-accent-3-filter: hue-rotate(300deg) saturate(0.9) brightness(1.15);
+    /* filter uncolorable elements to fit theme */
+    --login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(1); /* adjust for better creamy white compatibility */
+    --green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43);
+    --blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2);
 }
 
-/* other adjustments */
-/* Adjust colors, borders, backgrounds for elements not natively affected by variables */
-#app-mount .container_ee69e0, /* channel list */
-.privateChannels_f0963d, /* dms list */
-#app-mount .container_b2ca13, /* user panel */
-.members_cbd271, /* member list */
-.chat_a7d72e.container_f3abf4, /* message requests */
-#app-mount .container_c2efea, /* browse channels inner */
-.sidebarRegionScroller_c25c6d { /* settings sidebar */
-    background: var(--bg-4);
-}
-.selected_fd6364 .header_fd6364, /* server name hover */
-.wrapper_f90abb:hover .childWrapper_f90abb, /* server icon hover */
-.wrapper_f90abb.selected_ae80f7 .childWrapper_f90abb { /* selected server icon */
-    background: var(--message-hover);
-}
-
-/* more rounded corners */
-.container_ee69e0, .panels_a4d4d9, .privateChannels_f0963d, /* channel and dms list */
-.container_a6d69a, /* forums */
-.notice_be03aa, /* banner notice */
-.wrapper_d880dc.minimum_d880dc, /* private call */
-.main_d8215a, /* server onboarding */
-.shop_e77fa3, /* discord shop */
-.chat_a7d72e, /* chat container */
-.membersWrap_cbd271 { /* members list */
-    border-radius: var(--roundness-xl);
-    overflow: hidden;
-}
-
-/* Moon icon spin animation */
-.wrapper_f90abb:hover > .childWrapper_f90abb::before, 
-.wrapper_f90abb.selected_f90abb > .childWrapper_f90abb::before {
-    background: var(--text-0);
-    transform: rotate(-360deg) scale(0.8);
-}
 
