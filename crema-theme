@@ -1223,4 +1223,45 @@ html.theme-light,
 	--primary-660: var(--bg-3); /* search popout "enter" bar */
 
 	--white-500: var(--text-1);
+
+/* General Backgrounds */
+--bg-1: #f5f5dc; /* Main creamy white */
+--bg-2: #eae7d0; /* Slightly darker for distinction */
+--bg-3: #dcd7c5; /* Lighter beige for secondary elements */
+--bg-4: #f8f4e3; /* Off-white for modal backgrounds */
+
+/* Card & Modal Backgrounds */
+--card-background: #f5f5dc; /* Creamy white for cards */
+--modal-background: #f8f4e3; /* Off-white for modals */
+
+/* Input & Textbox Backgrounds */
+--input-background: #eae7d0; /* Slightly darker cream */
+--input-placeholder-text: #dcd7c5; /* Soft beige for placeholder text */
+
+/* Borders */
+--border-color: #e0dbc9; /* Slightly darker cream for borders */
+--polls-image-normal-border: #e0dbc9; /* Border for images in polls */
+--mention-background: #f5f5dc; /* Background of mentions */
+
+/* Buttons */
+--interactive-normal: #eae7d0; /* Creamy color for normal buttons */
+--interactive-hover: #dcd7c5; /* Lighter hover state */
+--interactive-active: #cfc8b5; /* Active state */
+--redesign-button-primary-background: #f5f5dc; /* Creamy white for primary button */
+--redesign-button-primary-pressed-background: #eae7d0; /* Slightly darker on press */
+
+/* Headers and Important Text Elements */
+--header-primary: #eae7d0; /* Creamy shade for header */
+--header-secondary: #dcd7c5; /* Lighter for secondary text */
+--header-muted: #cfc8b5; /* Even softer for muted headers */
+
+/* Status Colors */
+--status-online: #dcd7c5; /* Soft color for online status */
+--status-warning: #f8f4e3; /* Off-white for warnings */
+--status-danger-background: #f5f5dc; /* Creamy for danger background */
+
+/* Scrollbars */
+--scrollbar-auto-thumb: #eae7d0; /* Scrollbar thumb color */
+--scrollbar-auto-track: #dcd7c5; /* Scrollbar track color */
+
 }
